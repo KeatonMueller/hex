@@ -1,4 +1,5 @@
 # hex
+
 This is my Senior Project for my Computer Science degree at Yale University.
 
 It involves creating an intelligent agent to play the game of Hex, a board game
