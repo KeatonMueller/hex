@@ -11,8 +11,4 @@ public class RandomAgent implements Agent {
         } while (!b.isValid(move));
         return move;
     }
-
-    public String type() {
-        return "random";
-    }
 }

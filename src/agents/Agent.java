@@ -10,11 +10,4 @@ public interface Agent {
      * @return The index of the move
      */
     public int getMove(Board board);
-
-    /**
-     * Return this agent's type
-     * 
-     * @return String corresponding to this agent's type
-     */
-    public String type();
 }

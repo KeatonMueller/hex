@@ -130,8 +130,14 @@ public class Game {
                 System.out.println("Player " + winner + " won!");
                 break;
             }
-
             turn = 1 - turn;
+        }
+
+        System.out.println("Play again? (yes | no)");
+        if (scan.nextLine().equalsIgnoreCase("yes")) {
+            initBoard();
+            chooseOpponent();
+            run();
         }
     }
 
@@ -200,6 +206,10 @@ public class Game {
      * @return Winning player (1 | 2) or 0 if no winner
      */
     public int checkWin() {
+        // handle 1x1 board corner case
+        if (dim == 1)
+            return 1;
+
         HashSet<Integer> visited = new HashSet<>();
         Queue<Integer> queue = new ArrayDeque<>();
 
