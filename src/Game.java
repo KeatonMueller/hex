@@ -52,7 +52,7 @@ public class Game {
     private void chooseOpponent() {
         System.out.print("Opponent? (human | random): ");
         String opp = scan.nextLine();
-        switch (opp.strip().toLowerCase()) {
+        switch (opp.trim().toLowerCase()) {
             case "random":
                 opponent = new RandomAgent();
                 break;
