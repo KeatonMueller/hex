@@ -108,7 +108,7 @@ public class Game {
         if (turn == 0 || opponent == null) {
             return prompt(turn);
         }
-        return opponent.getMove(b);
+        return opponent.getMove(b, dim);
     }
 
     /**

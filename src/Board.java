@@ -2,7 +2,7 @@ package src;
 
 public class Board {
 	private int[] board;
-	public int dim;
+	private int dim;
 
 	public Board(int _dim) {
 		dim = _dim;
