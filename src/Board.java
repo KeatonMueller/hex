@@ -12,6 +12,14 @@ public class Board {
 	}
 
 	/**
+	 * Reset board to initial state
+	 */
+	public void reset() {
+		board = new int[dim * dim];
+		turn = 0;
+	}
+
+	/**
 	 * Determine if given board position is a valid move
 	 * 
 	 * @param idx The position of the move
