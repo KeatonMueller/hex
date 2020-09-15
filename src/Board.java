@@ -42,6 +42,11 @@ public class Board {
 		return board[idx];
 	}
 
+	/**
+	 * Get the current turn indicator
+	 * 
+	 * @return 0 if player 1's turn, 1 if player 2's turn
+	 */
 	public int getTurn() {
 		return turn;
 	}

@@ -72,6 +72,9 @@ class Canvas extends JPanel {
         });
     }
 
+    /**
+     * Get next move from agent, or do nothing if human to move
+     */
     private void nextMove() {
         // if human opponent or player 1's turn, next move is a click
         if (opponent == null || board.getTurn() == 0)
@@ -205,6 +208,7 @@ public class GUI extends JFrame {
     private int dim;
 
     public GUI() {
+        super();
         getDim();
         getOpponent();
         board = new Board(dim);
