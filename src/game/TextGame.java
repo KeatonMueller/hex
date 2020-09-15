@@ -16,7 +16,6 @@ public class TextGame {
      * Print game information and begin startup process
      */
     public TextGame() {
-        super();
         System.out.println();
         System.out.println("Welcome to Hex!");
         System.out.println("Player 1 is X, and is trying to connect the top to the bottom");
