@@ -4,6 +4,7 @@ import src.Board;
 import src.agents.Agent;
 
 public class RandomAgent implements Agent {
+    @Override
     public int getMove(Board b, int dim) {
         int move;
         do {

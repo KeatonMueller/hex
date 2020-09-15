@@ -3,10 +3,12 @@ package src;
 public class Board {
 	private int[] board;
 	private int dim;
+	private int turn;
 
 	public Board(int _dim) {
 		dim = _dim;
 		board = new int[dim * dim];
+		turn = 0;
 	}
 
 	/**
@@ -23,10 +25,11 @@ public class Board {
 	 * Makes a move on the board
 	 * 
 	 * @param idx  The position of the move
-	 * @param turn Whose turn it is
+	 * @param turn Turn indicator (0 | 1)
 	 */
-	public void move(int idx, int turn) {
+	public void move(int idx) {
 		board[idx] = turn + 1;
+		turn = 1 - turn;
 	}
 
 	/**
@@ -37,6 +40,10 @@ public class Board {
 	 */
 	public int get(int idx) {
 		return board[idx];
+	}
+
+	public int getTurn() {
+		return turn;
 	}
 
 	/**

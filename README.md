@@ -12,6 +12,10 @@ This project is coded in Java version 11.
 This project requires you have the Java SDK installed. It was coded using Java 11,
 but other versions may work as well.
 
-To run the program, clone the repo and run:
+To run the program in text mode, clone the repo and run:
 
-`make run`
+`make text`
+
+To run the program with a GUI, run:
+
+`make gui`
