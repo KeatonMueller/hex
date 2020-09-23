@@ -1,11 +1,9 @@
 # hex
 
-This is my Senior Project for my Computer Science degree at Yale University.
+This is a simple game engine for the board game Hex. It can be played as a
+text version or with a GUI.
 
-It involves creating an intelligent agent to play the game of Hex, a board game
-where one's objective is to connect opposite sides of the board.
-
-This project is coded in Java version 11.
+It is coded in Java version 11.
 
 ## How to use it
 
